@@ -1,0 +1,12 @@
+span.colorscheme {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin-right: 10px;
+	text-align: center;
+	padding: 72px 0 0;
+	color: #000000;
+}
+span.colorscheme.dark {
+	color: #ffffff;
+}
