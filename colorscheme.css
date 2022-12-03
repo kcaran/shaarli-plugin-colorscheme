@@ -1,4 +1,4 @@
-span.colorscheme {
+a.colorscheme {
 	display: inline-block;
 	width: 100px;
 	height: 100px;
@@ -7,6 +7,14 @@ span.colorscheme {
 	padding: 72px 0 0;
 	color: #000000;
 }
-span.colorscheme.dark {
+a.colorscheme.dark {
 	color: #ffffff;
+}
+a.colorscheme:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+a.colorscheme.dark:hover {
+	color: #ffffff;
+	text-decoration: underline;
 }

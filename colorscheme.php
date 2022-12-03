@@ -19,7 +19,7 @@ function display_color( $match ) {
 
   $dark = dark_color( $match ) ? ' dark' : '';
 
-  return '<span class="colorscheme' . $dark . '" style="background-color: ' .  $hex_color . '">' . $hex_color .  '</span>';
+  return '<a class="colorscheme' . $dark . '" style="background-color: ' .  $hex_color . '" href="#">' . $hex_color .  '</a>';
 }
 
 function colorscheme_url( $url ) {
@@ -53,6 +53,13 @@ function hook_colorscheme_render_includes( $data ) {
   }
 
   return $data;
+}
+
+function hook_colorscheme_render_footer($data)
+{
+    $data['js_files'][] = PluginManager::$PLUGINS_PATH . '/colorscheme/colorscheme.js';
+
+    return $data;
 }
 
 /**
